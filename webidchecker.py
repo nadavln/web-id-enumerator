@@ -29,6 +29,9 @@ for i in range(options.id_range):
         check_result = get_http_status_code(current_check)
         if check_result != 404 and check_result != 500:
             print(current_check + " ==> " + str(check_result))
+    except TypeError:
+        print("\nError: one or more of the parameters were not entered")
+        print("Please check your command")
     except KeyboardInterrupt:
         print("\nQuitting...")
         break
