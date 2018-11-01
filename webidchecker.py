@@ -32,6 +32,7 @@ for i in range(options.id_range):
     except TypeError:
         print("\nError: one or more of the parameters were not entered")
         print("Please check your command")
+        break
     except KeyboardInterrupt:
         print("\nQuitting...")
         break
